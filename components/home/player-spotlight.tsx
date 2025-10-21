@@ -22,7 +22,7 @@ const players = [
   },
   {
     id: 3,
-    name: "Ali aj",
+    name: "Ali AJ",
     position: "All-rounder",
     stats: "Avg: 38.5 | Wkts: 45",
     image: "/cricket-player-all-rounder.jpg",
@@ -37,9 +37,51 @@ const players = [
   {
     id: 5,
     name: "Fakhar",
-    position: "Spin Bowler, batsman",
+    position: "Spin Bowler, Batsman",
     stats: "Avg: 25.8 | Econ: 6.1",
     image: "/cricket-player-spinner.jpg",
+  },
+  {
+    id: 6,
+    name: "Ehsan Rajoka (Captain)",
+    position: "Team Captain / Middle Order Batsman",
+    stats: "Avg: 50.3 | SR: 99.1",
+    image: "/cricket-player-captain.jpg",
+  },
+  {
+    id: 7,
+    name: "Taha Faiz",
+    position: "Right Arm Fast Bowler",
+    stats: "Avg: 27.6 | Econ: 6.9",
+    image: "/cricket-player-fast.jpg",
+  },
+  {
+    id: 8,
+    name: "Usama Aslam",
+    position: "Top Order Batsman",
+    stats: "Avg: 42.8 | SR: 90.2",
+    image: "/cricket-player-toporder.jpg",
+  },
+  {
+    id: 9,
+    name: "Ali Mughal",
+    position: "All-rounder",
+    stats: "Avg: 35.5 | Wkts: 38",
+    image: "/cricket-player-allround.jpg",
+  },
+  {
+    id: 10,
+    name: "Aman Younis",
+    position: "Alrounder",
+    stats: "Avg: 22.4 | Econ: 5.8",
+    image: "/cricket-player-offspinner.jpg",
+  },
+  {
+    id: 11,
+    name: "Hassan Faiz",
+    position: "leg spinner",
+    stats: "Major Sponsor & Mentor",
+    image: "/cricket-sponsor.jpg",
   },
 ]
 
@@ -57,10 +99,10 @@ export default function PlayerSpotlight() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="text-white mb-12 text-center">Player Spotlight</h2>
+        <h2 className="text-white mb-12 text-center text-3xl font-bold">Player Spotlight</h2>
 
         <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mb-8">
             <AnimatePresence mode="wait">
               {players.map((player, idx) => (
                 <motion.div
@@ -101,12 +143,12 @@ export default function PlayerSpotlight() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
               >
-                <h3 className="text-white mb-2">{players[current].name}</h3>
+                <h3 className="text-white mb-2 text-2xl font-bold">{players[current].name}</h3>
                 <p className="text-accent text-lg font-semibold mb-4">{players[current].position}</p>
                 <p className="text-muted mb-6">{players[current].stats}</p>
                 <p className="text-text mb-6">
                   A talented player with exceptional skills and dedication to the sport. Known for consistent
-                  performances and leadership qualities.
+                  performances, teamwork, and sportsmanship.
                 </p>
 
                 <div className="flex gap-4">

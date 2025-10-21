@@ -36,14 +36,14 @@ const players = [
   },
   {
     id: 5,
-    name: "Fakhar",
+    name: "Fakhar Zaman",
     position: "Spin Bowler, Batsman",
     stats: "Avg: 25.8 | Econ: 6.1",
     image: "/cricket-player-spinner.jpg",
   },
   {
     id: 6,
-    name: "Ehsan Rajoka (Captain)",
+    name: "Ehsan Younis (Captain)",
     position: "Team Captain / Middle Order Batsman",
     stats: "Avg: 50.3 | SR: 99.1",
     image: "/cricket-player-captain.jpg",

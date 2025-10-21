@@ -29,7 +29,7 @@ export default function CaptainProfile() {
                 <img src="/cap.jpeg" alt="Captain" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-white">Ehsan Rajoka</h3>
+                <h3 className="text-xl font-serif font-bold text-white">Ehsan Younis</h3>
                 <p className="text-accent flex items-center gap-1">
                   <Star size={16} /> Team Captain
                 </p>
